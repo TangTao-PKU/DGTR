@@ -1,0 +1,129 @@
+STF+trans(best)
+# 3DPW {'mpjpe': 81.24, 'mpjpe_pa': 51.59, 'accel_err': 7.32, 'mpvpe': 96.9}*
+# mpii3d {'mpjpe': 95.58, 'mpjpe_pa': 61.73, 'accel_err': 8.54}
+# mpii3d {'mpjpe': 95.48, 'mpjpe_pa': 61.04, 'accel_err': 8.5}*
+# H36M {'mpjpe': 66.44, 'mpjpe_pa': 45.68, 'accel_err': 3.88}*
+# H36M {'mpjpe': 66.96, 'mpjpe_pa': 46.28, 'accel_err': 3.77}
+
+# 3DPW1 {'mpjpe': 81.45, 'mpjpe_pa': 51.67, 'accel_err': 7.26, 'mpvpe': 97.14}
+# 3DPW2 {'mpjpe': 81.24, 'mpjpe_pa': 51.59, 'accel_err': 7.32, 'mpvpe': 96.9}*
+# 2layers {'mpjpe': 81.28, 'mpjpe_pa': 51.8, 'accel_err': 7.52, 'mpvpe': 97.03}???
+# 3DPW3 {'mpjpe': 81.2, 'mpjpe_pa': 51.6, 'accel_err': 7.63, 'mpvpe': 96.8}
+# 3DPW4 {'mpjpe': 82.37, 'mpjpe_pa': 51.76, 'accel_err': 7.12, 'mpvpe': 97.14}
+# 3DPW5 {'mpjpe': 82.12, 'mpjpe_pa': 51.75, 'accel_err': 7.0, 'mpvpe': 98.46}
+
+
+2layers:  3dpw {'mpjpe': 81.28, 'mpjpe_pa': 51.8, 'accel_err': 7.52, 'mpvpe': 97.03}     277.559M 10.894M
+          3dpw {'mpjpe': 81.91, 'mpjpe_pa': 51.51, 'accel_err': 7.63, 'mpvpe': 97.64}*
+          {'mpjpe': 82.07, 'mpjpe_pa': 51.33, 'accel_err': 7.61, 'mpvpe': 97.38}*
+          mpii3d {'mpjpe': 94.58, 'mpjpe_pa': 61.34, 'accel_err': 8.5}
+          h36m {'mpjpe': 67.29, 'mpjpe_pa': 46.17, 'accel_err': 3.8}
+          mpii3d {'mpjpe': 94.15, 'mpjpe_pa': 61.27, 'accel_err': 8.53}*
+          h36m {'mpjpe': 67.28, 'mpjpe_pa': 45.99, 'accel_err': 3.92}*
+          wo 3dpw {'mpjpe': 94.28, 'mpjpe_pa': 55.84, 'accel_err': 6.93, 'mpvpe': 109.51}*
+          {'mpjpe': 94.05, 'mpjpe_pa': 55.54, 'accel_err': 6.7, 'mpvpe': 110.61}
+
+
+2layers+norm: 3dpw {'mpjpe': 82.09, 'mpjpe_pa': 51.94, 'accel_err': 7.28, 'mpvpe': 96.3}
+              mpii3d {'mpjpe': 94.49, 'mpjpe_pa': 61.48, 'accel_err': 8.66}
+              h36m {'mpjpe': 66.44, 'mpjpe_pa': 46.01, 'accel_err': 3.99}
+
+2layers+backnorm: 3dpw 
+              mpii3d {'mpjpe': 94.47, 'mpjpe_pa': 61.42, 'accel_err': 8.88}
+              h36m {'mpjpe': 67.41, 'mpjpe_pa': 46.6, 'accel_err': 4.19}
+
+
+trans-only
+# 3dpw{'mpjpe': 82.62, 'mpjpe_pa': 51.96, 'accel_err': 7.56, 'mpvpe': 98.77}
+
+STF-only
+# {'mpjpe': 84.42, 'mpjpe_pa': 52.23, 'accel_err': 7.85, 'mpvpe': 99.68}
+
+2*STF+trans
+# {'mpjpe': 82.4, 'mpjpe_pa': 51.83, 'accel_err': 7.54, 'mpvpe': 98.74}
+3*STF+trans
+{'mpjpe': 82.19, 'mpjpe_pa': 51.87, 'accel_err': 7.92, 'mpvpe': 97.82}
+
+wo residual
+# {'mpjpe': 84.76, 'mpjpe_pa': 52.02, 'accel_err': 7.55, 'mpvpe': 102.03}
+
+different input frames
+2fs: {'mpjpe': 85.5, 'mpjpe_pa': 52.98, 'accel_err': 16.79, 'mpvpe': 101.92}
+4fs: {'mpjpe': 85.11, 'mpjpe_pa': 52.42, 'accel_err': 10.75, 'mpvpe': 101.05}
+8fs: {'mpjpe': 82.68, 'mpjpe_pa': 52.4, 'accel_err': 8.45, 'mpvpe': 98.38}  192.412M 17.165M
+16fs: {'mpjpe': 81.91, 'mpjpe_pa': 51.51, 'accel_err': 7.63, 'mpvpe': 97.64}
+24fs: {'mpjpe': 81.68, 'mpjpe_pa': 51.64, 'accel_err': 6.9, 'mpvpe': 97.19}
+32fs: {'mpjpe': 82.73, 'mpjpe_pa': 52.16, 'accel_err': 6.68, 'mpvpe': 98.11}
+64fs: {'mpjpe': 83.06, 'mpjpe_pa': 52.34, 'accel_err': 7.0, 'mpvpe': 99.84}
+different input frames-2layers:
+2fs: {'mpjpe': 85.65, 'mpjpe_pa': 53.53, 'accel_err': 17.05, 'mpvpe': 101.78}
+4fs: {'mpjpe': 85.89, 'mpjpe_pa': 53.33, 'accel_err': 10.98, 'mpvpe': 101.5}
+8fs: {'mpjpe': 82.51, 'mpjpe_pa': 52.24, 'accel_err': 8.52, 'mpvpe': 98.07}
+16fs: {'mpjpe': 81.91, 'mpjpe_pa': 51.51, 'accel_err': 7.63, 'mpvpe': 97.64}
+24fs: {'mpjpe': 81.24, 'mpjpe_pa': 51.57, 'accel_err': 7.04, 'mpvpe': 96.73}
+32fs: {'mpjpe': 82.53, 'mpjpe_pa': 52.37, 'accel_err': 6.81, 'mpvpe': 97.92}
+64fs: {'mpjpe': 82.58, 'mpjpe_pa': 52.62, 'accel_err': 7.09, 'mpvpe': 98.88}
+
+
+different input frames-2layers:
+2fs: {'mpjpe': 85.99, 'mpjpe_pa': 53.5, 'accel_err': 16.92, 'mpvpe': 101.92}
+4fs: {'mpjpe': 86.84, 'mpjpe_pa': 53.14, 'accel_err': 11.07, 'mpvpe': 102.66}
+8fs: {'mpjpe': 84.31, 'mpjpe_pa': 52.41, 'accel_err': 8.15, 'mpvpe': 99.6}
+16fs: {'mpjpe': 82.01, 'mpjpe_pa': 51.33, 'accel_err': 7.61, 'mpvpe': 97.33}
+24fs: {'mpjpe': 81.77, 'mpjpe_pa': 51.99, 'accel_err': 7.11, 'mpvpe': 96.85}
+32fs: {'mpjpe': 82.53, 'mpjpe_pa': 52.37, 'accel_err': 6.81, 'mpvpe': 97.92}
+
+
+different layers of trans
+2layers:  {'mpjpe': 81.91, 'mpjpe_pa': 51.51, 'accel_err': 7.63, 'mpvpe': 97.64}     2layers 277.559M 10.894M    MPS-Net: 318.394M 316M   
+4layers:  {'mpjpe': 81.24, 'mpjpe_pa': 51.59, 'accel_err': 7.32, 'mpvpe': 96.9}      4layers 378.354M 17.199M
+6layers:  {'mpjpe': 83.03, 'mpjpe_pa': 52.68, 'accel_err': 7.4, 'mpvpe': 98.84}      6layers 479.148M 23.503M
+8layers:  {'mpjpe': 85.64, 'mpjpe_pa': 53.64, 'accel_err': 6.94, 'mpvpe': 101.8}     8layers 579.942M 29.808M
+
+wo 3dpw
+# 3dpw {'mpjpe': 92.45, 'mpjpe_pa': 55.1, 'accel_err': 6.77, 'mpvpe': 109.93}
+# mpii3d {'mpjpe': 98.28, 'mpjpe_pa': 61.99, 'accel_err': 8.02}
+# h36m {'mpjpe': 65.89, 'mpjpe_pa': 41.83, 'accel_err': 3.36}
+# 多做几个without 3dpw实验
+# 8layers {'mpjpe': 84.03, 'mpjpe_pa': 53.35, 'accel_err': 7.42, 'mpvpe': 100.07}
+
+
+###ffmpeg: error while loading shared libraries: libopencv_core.so.2.4: cannot open shared object file: No such file or directory
+find /usr -name 'libopencv_core.so.2.4'
+export LD_LIBRARY_PATH=/usr/local/lib/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+trr-only
+# 3DPW{'mpjpe': 102.14, 'mpjpe_pa': 63.98, 'accel_err': 8.04, 'mpvpe': 120.18}
+
+gcn-only
+# 3DPW{'mpjpe': 86.7, 'mpjpe_pa': 52.62, 'accel_err': 6.98, 'mpvpe': 102.76}
+
+2*gcn+trans
+# 3DPW{'mpjpe': 82.95, 'mpjpe_pa': 52.04, 'accel_err': 7.97, 'mpvpe': 98.33}
+
+
+wo 3dpw for training
+# 3DPW {'mpjpe': 95.57, 'mpjpe_pa': 55.02, 'accel_err': 6.99, 'mpvpe': 111.83}
+
+flops param
+# ours: 378.354M 17.199M
+# EGTR: 274.43 4.39 
+# MPS-Net: 318.394M 12.646M   
