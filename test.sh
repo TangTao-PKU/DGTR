@@ -3,7 +3,7 @@
 
 
 python main.py --test --dataset 3dpw  \
---cfg ./configs/3dpw.yaml --gpu 2 --model DGTR \
+--cfg ./configs/3dpw.yaml --gpu 2 --model DGTR \ 
 --checkpoint '/home/tangt/models/EGT-Net/data/work_dir/1012_1015_42_3dpw_table2_trans_t'
 
 # python main.py --test --dataset 3dpw  \
