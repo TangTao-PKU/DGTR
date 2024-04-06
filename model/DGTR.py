@@ -255,12 +255,4 @@ if __name__ == '__main__':
     print('ours:',flops, params)
     model.eval()
         
-# 3DPW{'mpjpe': 83.14, 'mpjpe_pa': 51.59, 'accel_err': 8.06, 'mpvpe': 98.51}
-# {'mpjpe': 97.01, 'mpjpe_pa': 62.84, 'accel_err': 9.45}
-# MPII3D{'mpjpe': 95.86, 'mpjpe_pa': 61.71, 'accel_err': 9.2}
-# {'mpjpe': 68.86, 'mpjpe_pa': 46.18, 'accel_err': 4.65}
-# H36M{'mpjpe': 67.17, 'mpjpe_pa': 46.04, 'accel_err': 4.85}
-
-# {'mpjpe': 81.54, 'mpjpe_pa': 51.94, 'accel_err': 7.57, 'mpvpe': 97.19}
-# {'mpjpe': 82.0, 'mpjpe_pa': 51.43, 'accel_err': 8.09, 'mpvpe': 98.66}
 
