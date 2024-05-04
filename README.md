@@ -3,7 +3,8 @@
 This repository is the official [Pytorch](https://pytorch.org/) implementation of "Dual-Branch Graph Transformer Network for 3D Human Mesh Reconstruction from Video" 
 
 ## Video
-<iframe height=360 width=640 src="./asset/IROS24_1464_VI_i.mp4">
+https://github.com/TangTao-PKU/DGTR/assets/84534481/26784632-6cfc-4182-ac37-140a0712c26f
+
 
 ## Running DGTR
 
