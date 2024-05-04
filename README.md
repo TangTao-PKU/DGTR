@@ -42,4 +42,3 @@ ${ROOT}
       |-- courtyard_arguing_00
       |-- ...
 ```
-More details about training and evaluation will be available soon.
