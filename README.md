@@ -1,4 +1,4 @@
-# DGTR: Dual-Branch Graph Transformer Network for 3D Human Mesh Reconstruction from Video
+# DGTR: Dual-Branch Graph Transformer Network for 3D Human Mesh Reconstruction from Video (IROS 2024)
 ## Introduction
 This repository is the official [Pytorch](https://pytorch.org/) implementation of "Dual-Branch Graph Transformer Network for 3D Human Mesh Reconstruction from Video" 
 
